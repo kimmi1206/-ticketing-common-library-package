@@ -13,6 +13,7 @@ export class RequestValidationError extends CustomError {
 
   serializeErrors() {
     return this.errors.map((err) => {
+      // returns if express-validator generates a validtion error
       return { message: err.msg, field: err.param };
     });
   }
