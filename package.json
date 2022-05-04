@@ -10,8 +10,7 @@
   "scripts": {
     "clean": "del-cli ./build/*",
     "build": "npm run clean && tsc",
-    "gitpush": "git push ticketing-common-library-npm-package",
-    "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish && npm run gitpush"
+    "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish && git push ticketing-common-library-npm-package"
   },
   "keywords": [],
   "author": "",
