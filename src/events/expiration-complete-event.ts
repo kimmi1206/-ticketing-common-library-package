@@ -5,4 +5,5 @@ export interface ExpirationCompleteEvent {
   data: {
     orderId: string;
   };
+  //
 }
